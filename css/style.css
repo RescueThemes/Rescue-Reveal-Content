@@ -1,0 +1,190 @@
+/*** Default Styles ***/
+.reveal {
+    bottom: -45px;
+    height: 520px;
+    position: absolute;
+    *zoom: 1;
+}
+.reveal:after { 
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+.reveal .reveal-box { 
+	position: absolute; 
+	bottom: 0; 
+	width: 315px; 
+}
+.reveal-icon { 
+    background-color: #e8554e;
+    border-radius: 100%;
+    display: block;
+    height: 70px;
+	width: 70px;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+}
+.reveal-icon i.fa {
+	color: #ffffff;
+	font-size: 2em;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ie .reveal-icon span { display: none; }
+.ie .reveal-icon:hover span { display: block; }
+.reveal-icon span { 
+	-webkit-transition: none 125ms ease-out; 
+	-webkit-transition-delay: 150ms; 
+	-moz-transition: none 125ms ease-out 150ms; 
+	-o-transition: none 125ms ease-out 150ms; 
+	transition: none 125ms ease-out 150ms; 
+	-webkit-transition-property: opacity, top; 
+	-moz-transition-property: opacity, top; 
+	-o-transition-property: opacity, top; 
+	transition-property: opacity, top; 
+	opacity: 0; 
+	top: 3px; 
+}
+.reveal-icon:hover span { opacity: 1; top: -2px; }
+.reveal-box { 
+	margin-top: 395px; 
+	display: block; 
+	text-align: center; 
+	height: 126px; 
+	position: relative; 
+	text-decoration: none !important; 
+}
+.reveal-box h4 { 
+	position: absolute; 
+	bottom: 35px; 
+	width: 100%; 
+	display: block; 
+	font-size: 20px; 
+	letter-spacing: 1px; 
+/*	text-transform: uppercase; */
+}
+.reveal-box figure { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	overflow: hidden; 
+	width: 100%; 
+	height: 0; 
+	opacity: 0; 
+	margin: 0 0;
+}
+.reveal-box figure img { 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	display: block; 
+}
+.reveal-box .reveal-icon { 
+	margin: -40px auto 22px; 
+}
+.reveal-box .reveal-icon span { 
+	display: none !important; 
+}
+.reveal-box dl { 
+	border-top: 6px solid #e8554e; 
+}
+.reveal-box dd { 
+	color: #919191;
+	font-size: 16px; 
+	line-height: 26px; 
+	padding: 0 30px; 
+	overflow: scroll; 
+	height: 0; 
+	opacity: 0; 
+}
+.reveal-box, .reveal-box figure, .reveal-box h4 span, .reveal-box dd, .reveal-box dd span { 
+	-webkit-transition: all 300ms cubic-bezier(0.32, 0.22, 0.35, 0.98); 
+	-webkit-transition-delay: 0; 
+	-moz-transition: all 300ms cubic-bezier(0.32, 0.22, 0.35, 0.98) 0; 
+	-o-transition: all 300ms cubic-bezier(0.32, 0.22, 0.35, 0.98) 0; 
+	transition: all 300ms cubic-bezier(0.32, 0.22, 0.35, 0.98) 0; 
+}
+.reveal-box:hover, .reveal-box.expanded { 
+	margin-top: 0; 
+	padding-top: 185px; 
+	height: 536px; 
+	background: #ffffff; 
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4); 
+	-moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4); 
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4); 
+}
+.reveal-box:hover figure, .reveal-box.expanded figure { 
+	height: 185px; 
+	opacity: 1; 
+}
+.reveal-box:hover h4 span, .reveal-box.expanded h4 span { 
+	color: #e8554e; 
+}
+.reveal-box:hover dd, .reveal-box.expanded dd { 
+	height: 185px; 
+	opacity: 1; 
+}
+.reveal-box:hover dd span, .reveal-box.expanded dd span { 
+	opacity: 1; 
+}
+.reveal-box:hover dd span:hover, .reveal-box.expanded dd span:hover { 
+	background-color: #fa5c54; 
+}
+.reveal-box:hover, .reveal-box:hover h4 span, .reveal-box.expanded, .reveal-box.expanded h4 span { 
+	-webkit-transition-duration: 225ms; 
+	-moz-transition-duration: 225ms; 
+	-o-transition-duration: 225ms; 
+	transition-duration: 225ms; 
+	-webkit-transition-delay: 100ms; 
+	-moz-transition-delay: 100ms; 
+	-o-transition-delay: 100ms; 
+	transition-delay: 100ms; 
+}
+.reveal-box:hover figure, .reveal-box.expanded figure { 
+	-webkit-transition-duration: 225ms; 
+	-moz-transition-duration: 225ms; 
+	-o-transition-duration: 225ms; 
+	transition-duration: 225ms; 
+	-webkit-transition-delay: 100ms; 
+	-moz-transition-delay: 100ms; 
+	-o-transition-delay: 100ms; 
+	transition-delay: 100ms; 
+}
+.reveal-box:hover dd, .reveal-box.expanded dd { 
+	-webkit-transition-duration: 540ms; 
+	-moz-transition-duration: 540ms; 
+	-o-transition-duration: 540ms; 
+	transition-duration: 540ms; 
+	-webkit-transition-delay: 500ms; 
+	-moz-transition-delay: 500ms; 
+	-o-transition-delay: 500ms; 
+	transition-delay: 500ms; 
+}
+.reveal-box:hover dd span, .reveal-box.expanded dd span { 
+	-webkit-transition-duration: 540ms; 
+	-moz-transition-duration: 540ms; 
+	-o-transition-duration: 540ms; 
+	transition-duration: 540ms; 
+	-webkit-transition-delay: 1100ms; 
+	-moz-transition-delay: 1100ms;
+	-o-transition-delay: 1100ms; 
+	transition-delay: 1100ms; 
+}
+
+.home_content_bg .widget_rescue_reveal_plugin {
+	margin-top: 10em;
+}
+
+/*** Media Queries ***/
+
+@media only screen and (min-width: 40em) and (max-width: 85em) { 
+	.reveal .reveal-box {
+	    width: 226px;
+	}
+	.reveal-box h4 span {
+	    font-size: .75em;
+	}
+} /* min-width 641px, medium screens */
+
