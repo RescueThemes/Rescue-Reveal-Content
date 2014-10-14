@@ -65,8 +65,8 @@ class rescue_reveal_plugin extends WP_Widget {
 		</p>
 
 		<p>
-        <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e('Icon', 'rescue'); ?></label> 
-        <input class="widefat" id="<?php echo $this->get_field_id( 'icon' ); ?>" name="<?php echo $this->get_field_name( 'icon' ); ?>" type="text" value="<?php echo esc_attr( $icon ); ?>" placeholder="e.g. Cloud" />
+        <label for="<?php echo $this->get_field_id( 'icon' ); ?>"><?php _e('Icon', 'rescue'); ?>: Enter any icon name from the <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a> list</label> 
+        <input class="widefat" id="<?php echo $this->get_field_id( 'icon' ); ?>" name="<?php echo $this->get_field_name( 'icon' ); ?>" type="text" value="<?php echo esc_attr( $icon ); ?>" placeholder="e.g. fa-cloud" />
 		</p>
 
 		<p>
@@ -123,7 +123,7 @@ class rescue_reveal_plugin extends WP_Widget {
 		   // Check if icon is set
 		   if( $icon ) {
 		     // echo $icon;
-		   	echo '<dt><span class="reveal-icon"><i class="fa fa-'.$icon.'"></i></span></dt>';
+		   	echo '<dt><span class="reveal-icon"><i class="fa '.$icon.'"></i></span></dt>';
 		   } else {
 		   	echo '<dt><span class="reveal-icon"><i class="fa fa-paw"></i></span></dt>';
 		   }
